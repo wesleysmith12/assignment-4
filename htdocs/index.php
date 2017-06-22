@@ -1,8 +1,11 @@
 <?php
 	include "../dbConnect.php";
 	include "../mySQL.php";
-	
-	$name = "Kilroy";
+
+	$asin = "B01LTHMF3M";
+	$title = "The Magnificent Seven [Blu-ray]";
+	$price = 10.98;
+
 
 	$myDB = fConnectToDatabase();
     //    $sql = "INSERT INTO dvdtitles (asin, title, price) VALUES ('$asin', '$title', $price)";
@@ -15,6 +18,10 @@
 
 
     fListFromDatabase($myDB);
+
+    //fInsertToDatabase($myDB, $asin, $title, $price);
+
+    fDeleteFromDatabase($myDB, $asin);
 
 	//print_r($myDB);
 

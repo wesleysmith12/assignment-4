@@ -6,8 +6,8 @@
 	$title = "The Magnificent Seven [Blu-ray]";
 	$price = 10.98;
 
-	$fname = "Bruce";
-	$lname = "Willis";
+	$fname1 = "Bruce";
+	$lname1 = "Willis";
 
       $fname2 = "Sebastian";
       $lname2 = "Koch";

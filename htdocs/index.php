@@ -6,6 +6,28 @@
 	$title = "The Magnificent Seven [Blu-ray]";
 	$price = 10.98;
 
+//	$fname = "Bruce";
+//	$lname = "Willis";
+//
+//  $fname2 = "Sebastian";
+//  $lname2 = "Koch";
+
+//    $fname1 = "Ethan";
+//    $lname1 = "Hawke";
+//
+//    $fname2 = "Halen";
+//    $lname2 = "Bennett";
+//
+//    $fname1 = "Ethan";
+//    $lname1 = "Hawke";
+//
+//    $fname2 = "Halen";
+//    $lname2 = "Bennett";
+
+
+
+    $actor1 = 1;
+    $actor2 = 2;
 
 	$myDB = fConnectToDatabase();
     //    $sql = "INSERT INTO dvdtitles (asin, title, price) VALUES ('$asin', '$title', $price)";
@@ -19,9 +41,9 @@
 
     fListFromDatabase($myDB);
 
-    //fInsertToDatabase($myDB, $asin, $title, $price);
+    //fInsertToDatabase($myDB, $asin, $title, $price, $fname1, $lname1, $fname2, $lname2);
 
-    fDeleteFromDatabase($myDB, $asin);
+    //fDeleteFromDatabase($myDB, $asin, $actor1, $actor2);
 
 	//print_r($myDB);
 

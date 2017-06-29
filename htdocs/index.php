@@ -2,28 +2,41 @@
 	include "../dbConnect.php";
 	include "../mySQL.php";
 
+//	$asin = "B01LTHMF3M";
+//	$title = "The Magnificent Seven [Blu-ray]";
+//	$price = 10.98;
+
 	$asin = "B01LTHMF3M";
-	$title = "The Magnificent Seven [Blu-ray]";
-	$price = 10.98;
+	$actorID = 25;
 
-	$fname1 = "Bruce";
-	$lname1 = "Willis";
-
-      $fname2 = "Sebastian";
-      $lname2 = "Koch";
-
-//    $fname1 = "Ethan";
-//    $lname1 = "Hawke";
+	//die hard
+//	$fname1 = "Bruce";
+//	$lname1 = "Willis";
 //
-//    $fname2 = "Halen";
-//    $lname2 = "Bennett";
-//
-//    $fname1 = "Ethan";
-//    $lname1 = "Hawke";
-//
-//    $fname2 = "Halen";
-//    $lname2 = "Bennett";
+//    $fname2 = "Sebastian";
+//    $lname2 = "Koch";
 
+
+//The Magnificent Seven
+//    $fname1 = "Yul";
+//    $lname1 = "Brynner";
+//
+//    $fname2 = " Steve";
+//    $lname2 = "McQueen";
+
+//incredibles
+//    $fname1 = "Craig";
+//    $lname1 = "Nelson";
+//
+//    $fname2 = "Samuel";
+//    $lname2 = "Jackson";
+
+//Beginnings Trilogy
+    $fname1 = "James";
+    $lname1 = "McAvoy";
+
+    $fname2 = "Michael";
+    $lname2 = "Fassbender";
 
 
     $actor1 = 1;
@@ -36,14 +49,11 @@
     //    $sql->bindParam(":title", $price);
     //	$sql->execute();
 
-
-
+    //fInsertToDatabase($myDB, $asin, $actorID);
 
     fListFromDatabase($myDB);
 
-    fInsertToDatabase($myDB, $asin, $title, $price, $fname1, $lname1, $fname2, $lname2);
-
-    fDeleteFromDatabase($myDB, $asin, $actor1, $actor2);
+    //fDeleteFromDatabase($myDB, $asin, $actorID);
 
 	//print_r($myDB);
 

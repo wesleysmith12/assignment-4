@@ -49,11 +49,11 @@
     //    $sql->bindParam(":title", $price);
     //	$sql->execute();
 
-    //fInsertToDatabase($myDB, $asin, $actorID);
+    fInsertToDatabase($myDB, $asin, $actorID);
 
     fListFromDatabase($myDB);
 
-    //fDeleteFromDatabase($myDB, $asin, $actorID);
+    fDeleteFromDatabase($myDB, $asin, $actorID);
 
 	//print_r($myDB);
 
